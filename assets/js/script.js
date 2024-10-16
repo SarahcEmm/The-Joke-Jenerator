@@ -5,7 +5,7 @@ async function getJoke() {
 
     try {
         // Fetch a random joke from the JokeAPI
-        const response = await fetch('https://v2.jokeapi.dev/joke/Anyhttps://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit');
+        const response = await fetch('https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit');
         const data = await response.json();
 
         // Check if it's a single or two-part joke
